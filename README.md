@@ -99,5 +99,3 @@ invokestatic
 <br/>
 
 More examples can be found [here](/examples)
-
-<br/>
