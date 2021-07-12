@@ -5,25 +5,25 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
-import com.github.wdestroier.chamomile.instruction.comparision.acmp.IfAcmpeqInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.acmp.IfAcmpneInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.cmp0.IfeqInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.cmp0.IfgeInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.cmp0.IfgtInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.cmp0.IfleInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.cmp0.IfltInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.cmp0.IfneInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.dcmp.DcmpgInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.dcmp.DcmplInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.fcmp.FcmpgInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.fcmp.FcmplInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.icmp.IfIcmpeqInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.icmp.IfIcmpgeInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.icmp.IfIcmpgtInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.icmp.IfIcmpleInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.icmp.IfIcmpltInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.icmp.IfIcmpneInstruction;
-import com.github.wdestroier.chamomile.instruction.comparision.lcmp.LcmpInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.acmp.IfAcmpeqInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.acmp.IfAcmpneInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.cmp0.IfeqInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.cmp0.IfgeInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.cmp0.IfgtInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.cmp0.IfleInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.cmp0.IfltInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.cmp0.IfneInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.dcmp.DcmpgInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.dcmp.DcmplInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.fcmp.FcmpgInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.fcmp.FcmplInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.icmp.IfIcmpeqInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.icmp.IfIcmpgeInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.icmp.IfIcmpgtInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.icmp.IfIcmpleInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.icmp.IfIcmpltInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.icmp.IfIcmpneInstruction;
+import com.github.wdestroier.chamomile.instruction.comparison.lcmp.LcmpInstruction;
 import com.github.wdestroier.chamomile.instruction.constant.AconstNullInstruction;
 import com.github.wdestroier.chamomile.instruction.constant.BipushInstruction;
 import com.github.wdestroier.chamomile.instruction.constant.Ldc2WInstruction;
@@ -396,7 +396,7 @@ public class InstructionFactory {
 		list.add(0x92, "i2c", I2cInstruction.class, () -> new I2cInstruction());
 		list.add(0x93, "i2s", I2sInstruction.class, () -> new I2sInstruction());
 
-		// Comparisions
+		// Comparisons
 		list.add(0x94, "lcmp", LcmpInstruction.class, () -> new LcmpInstruction());
 		list.add(0x95, "fcmpl", FcmplInstruction.class, () -> new FcmplInstruction());
 		list.add(0x96, "fcmpg", FcmpgInstruction.class, () -> new FcmpgInstruction());
